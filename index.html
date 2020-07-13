@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Currency converter</h1></header>
+    <main>
+      <div class="form-wrapper">
+        <input
+          type="text"
+          name="amount"
+          id="amount"
+          onchange="input()"
+          value="1"
+        />
+        <select name="currency-from" id="currency-from" onchange="from()">
+          <option value="usd"> 🇺🇸 USD</option>
+          <option value="eur">🇪🇺 EUR</option>
+          <option value="czk">🇨🇿 CZK</option>
+          <option value="gbp">🇬🇧 GBR</option>
+          <option value="inr">🇮🇳 INR</option>
+          <option value="jpy">🇯🇵 JPY</option>
+        </select>
+        <button onclick="change()">&#8644;</button>
+        <select name="currency-to" id="currency-to" onchange="to()">
+          <option value="usd">🇺🇸 USD</option>
+          <option value="eur">🇪🇺 EUR</option>
+          <option value="czk">🇨🇿 CZK</option>
+          <option value="gbp">🇬🇧 GBR</option>
+          <option value="inr">🇮🇳 INR</option>
+          <option value="jpy">🇯🇵 JPY</option>
+        </select>
+        <button onclick="calculation()">></button>
+      </div>
+      <div class="display" id="display"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
