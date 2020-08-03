@@ -43,27 +43,14 @@ function calculation() {
 }
 
 function change() {
-  let switching = [currencyFrom.value, currencyTo.value];
-  currencyFrom.value = switching[1];
-  currencyTo.value = switching[0];
+  // using of destructuring of array on swapping values of two variables :)
+  [currencyTo.value, currencyFrom.value] = [
+    currencyFrom.value,
+    currencyTo.value,
+  ];
+  // let switching = [currencyFrom.value, currencyTo.value];
+  // currencyFrom.value = switching[1];
+  // currencyTo.value = switching[0];
   from();
   to();
-}
-
-
-
-var product = {
-  id : 2082569,
-  category: "trousers",
-  type: "The Denim",
-  name: "The tapered jeans",
-  priceOriginal:29.90,
-  priceActual: 19.90,
-  priceCurrency: "EUR",
-  color: "jeans-hellblau",
-  size: {
-    length: [30,32,34,36],
-    width: [28,30,32,34,36,38,40,42,44,46,48,50],
-  }
-  photo: ["front src-file","back src-file", "on person src-file",..]
 }
