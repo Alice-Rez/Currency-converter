@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;700;900&display=swap");
+
+:root {
+  --primary: #01069b;
+  --primary-dark: #010459;
+  --primary-light: #dbdcfd;
+  --secondary: #cf8617;
+  --secondary-light: #f1c88b;
+  --grey-dark: #292826;
+  --grey-light: #e6e6e7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MuseoModerno", cursive;
+  margin: 1em;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+  color: var(--primary);
+}
+
+main {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  padding: 5em 0;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+}
+
+.form-wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input,
+select,
+button {
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.5rem;
+  padding: 0.25em 0.75em;
+  border-radius: 10px;
+  margin-top: 0.5em;
+}
+
+select {
+  color: var(--primary);
+  background-color: var(--grey-light);
+}
+
+button {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+  font-weight: 700;
+  border: none;
+}
+
+.display {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
+@media screen and (min-width: 800px) {
+  .form-wrapper {
+    flex-direction: row;
+  }
+  input,
+  select,
+  button {
+    margin-top: 0em;
+  }
+}
