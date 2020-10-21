@@ -2,6 +2,8 @@
 
 ## Description
 
+[Live demo](https://alice-rez.github.io/Currency-converter/)
+
 Small project that was done during my web development course just after learning arrays. A little bit utilized after learning about objects. Basic currency converter with static exchange rates (no API used for this) but possibility to change direction of the conversion.
 
 <img align="center" src="./converter.png" width="70%">
